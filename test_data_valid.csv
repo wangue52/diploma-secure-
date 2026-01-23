@@ -1,0 +1,21 @@
+Matricule étudiant,Nom de famille,Prénom,Date de naissance,Lieu de naissance,Programme / Filière,Faculté / Département,Session académique,Mention,Date de délivrance,Niveau d'étude
+ET2023001,Dupont,Jean,15/03/2000,Paris,Licence Informatique,Faculté des Sciences,2023-2024,Très Bien,01/07/2024,BAC+3
+ET2023002,Martin,Marie,22/07/1999,Lyon,Licence Informatique,Faculté des Sciences,2023-2024,Bien,01/07/2024,BAC+3
+ET2023003,Bernard,Pierre,10/11/2001,Marseille,Master Informatique,Faculté des Sciences,2023-2024,Assez Bien,01/07/2024,BAC+5
+ET2023004,Dubois,Sophie,05/02/2000,Toulouse,Master Informatique,Faculté des Sciences,2023-2024,Passable,01/07/2024,BAC+5
+ET2023005,Thomas,Luc,18/08/2002,Bordeaux,Licence Mathématiques,Faculté des Sciences,2023-2024,Très Bien,01/07/2024,BAC+3
+ET2023006,Robert,Anne,29/04/1999,Lille,Licence Mathématiques,Faculté des Sciences,2023-2024,Bien,01/07/2024,BAC+3
+ET2023007,Petit,Claude,12/09/2000,Nice,Master Mathématiques,Faculté des Sciences,2023-2024,Assez Bien,01/07/2024,BAC+5
+ET2023008,Durand,Nathalie,07/12/2001,Nantes,Master Physique,Faculté des Sciences,2023-2024,Passable,01/07/2024,BAC+5
+ET2023009,Lefevre,David,25/05/2000,Strasbourg,Doctorat Informatique,Faculté des Sciences,2023-2024,Très Bien,01/07/2024,BAC+8
+ET2023010,Michel,Isabelle,14/06/1998,Montpellier,Licence Physique,Faculté des Sciences,2023-2024,Bien,01/07/2024,BAC+3
+ET2023011,Garcia,François,20/01/2000,Rennes,Master Biologie,Faculté des Sciences,2023-2024,Assez Bien,01/07/2024,BAC+5
+ET2023012,Martinez,Véronique,08/03/2002,Reims,Licence Chimie,Faculté des Sciences,2023-2024,Passable,01/07/2024,BAC+3
+ET2023013,Hernandez,Laurent,16/07/2001,Le Havre,License Biologie,Faculté des Sciences,2023-2024,Très Bien,01/07/2024,BAC+3
+ET2023014,Lopez,Christine,23/10/2000,Saint-Etienne,Master Chimie,Faculté des Sciences,2023-2024,Bien,01/07/2024,BAC+5
+ET2023015,Gonzalez,Michel,11/04/1999,Toulon,Doctorat Physique,Faculté des Sciences,2023-2024,Assez Bien,01/07/2024,BAC+8
+ET2023016,Rodriguez,Sylvie,02/09/2001,Grenoble,Licence Informatique,Faculté de Technologie,2023-2024,Passable,01/07/2024,BAC+3
+ET2023017,Sanchez,Nicolas,19/11/2000,Angers,Master Informatique,Faculté de Technologie,2023-2024,Très Bien,01/07/2024,BAC+5
+ET2023018,Perez,Martine,31/05/2002,Dijon,Licence Géographie,Faculté de Lettres,2023-2024,Bien,01/07/2024,BAC+3
+ET2023019,Torres,Christophe,07/08/1999,Villeurbanne,Master Géographie,Faculté de Lettres,2023-2024,Assez Bien,01/07/2024,BAC+5
+ET2023020,Flores,Béatrice,26/12/2000,Le Mans,Licence Histoire,Faculté de Lettres,2023-2024,Passable,01/07/2024,BAC+3

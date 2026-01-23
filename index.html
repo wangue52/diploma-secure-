@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiplomaSecure Pro - Enterprise Diploma Management</title>
+    <!-- Chargement du CSS principal -->
+        <script>
+        (function() {
+            try {
+                const testKey = '__security_test__';
+                window.localStorage.setItem(testKey, '1');
+                window.localStorage.removeItem(testKey);
+            } catch (e) {
+                const createMock = () => ({
+                    _data: {},
+                    setItem: function(k, v) { this._data[k] = String(v); },
+                    getItem: function(k) { return this._data.hasOwnProperty(k) ? this._data[k] : null; },
+                    removeItem: function(k) { delete this._data[k]; },
+                    clear: function() { this._data = {}; },
+                    key: function(i) { return Object.keys(this._data)[i] || null; },
+                    get length() { return Object.keys(this._data).length; }
+                });
+                Object.defineProperty(window, 'localStorage', { value: createMock() });
+                Object.defineProperty(window, 'sessionStorage', { value: createMock() });
+            }
+        })();
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react@^19.2.3",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+        "react/": "https://esm.sh/react@^19.2.3/",
+        "recharts": "https://esm.sh/recharts@^3.6.0",
+        "axios": "https://esm.sh/axios@^1.7.9",
+        "jspdf": "https://esm.sh/jspdf@^2.5.1",
+        "html5-qrcode": "https://esm.sh/html5-qrcode@^2.3.8",
+        "@google/genai": "https://esm.sh/@google/genai@^1.37.0"
+      }
+    }
+    </script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-slate-50 text-slate-900 overflow-x-hidden">
+    <div id="splash-screen">
+        <div class="loader-ring"></div>
+        <p style="color: #64748b; font-size: 10px; margin-top: 20px; font-weight: 800; letter-spacing: 0.2em; text-transform: uppercase;">Souveraineté Numérique...</p>
+    </div>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+    <script>
+        window.addEventListener('load', () => {
+            const splash = document.getElementById('splash-screen');
+            if (splash) {
+                setTimeout(() => { 
+                    splash.style.opacity = '0'; 
+                    setTimeout(() => splash.remove(), 400); 
+                }, 500);
+            }
+        });
+    </script>
+</body>
+</html>

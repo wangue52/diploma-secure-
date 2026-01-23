@@ -1,0 +1,7 @@
+{
+  "name": "DiplomaSecure Pro Enterprise",
+  "description": "Plateforme souveraine de certification académique multi-tenant.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

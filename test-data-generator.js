@@ -1,0 +1,70 @@
+// Script pour générer un fichier Excel de test pour DiplomaSecure
+// Utiliser dans la console du navigateur ou comme utilitaire
+
+const generateTestExcel = () => {
+  // Données de test
+  const testData = [
+    ["Matricule étudiant", "Nom de famille", "Prénom", "Date de naissance", "Lieu de naissance", "Programme / Filière", "Faculté / Département", "Session académique", "Mention", "Date de délivrance", "Niveau d'étude"],
+    ["ET2024001", "TCHOFFO", "Abel", "15/03/1998", "Yaoundé", "Génie Logiciel", "Faculté des Sciences", "2023-2024", "Bien", "15/07/2024", "BAC+3"],
+    ["ET2024002", "NGO BILONG", "Bernadette", "22/08/1999", "Douala", "Génie Logiciel", "Faculté des Sciences", "2023-2024", "Très Bien", "15/07/2024", "BAC+3"],
+    ["ET2024003", "MBARGA", "Claude", "10/12/1997", "Bafoussam", "Réseaux et Télécommunications", "École Polytechnique", "2023-2024", "Bien", "15/07/2024", "BAC+3"],
+    ["MA2024001", "FOKOU", "Marie", "05/06/1996", "Bamenda", "Intelligence Artificielle", "Faculté des Sciences", "2023-2024", "Très Bien", "15/07/2024", "BAC+5"],
+    ["ET2024004", "KAMGA", "Paul", "18/11/1998", "Garoua", "Cybersécurité", "École Polytechnique", "2023-2024", "Assez Bien", "15/07/2024", "BAC+3"],
+    ["ET2024005", "ESSOMBA", "Grace", "30/01/1999", "Ebolowa", "Génie Logiciel", "Faculté des Sciences", "2023-2024", "Bien", "15/07/2024", "BAC+3"],
+    ["MA2024002", "BIYA", "Jean", "12/04/1995", "Maroua", "Data Science", "Faculté des Sciences", "2023-2024", "Très Bien", "15/07/2024", "BAC+5"],
+    ["ET2024006", "ATANGANA", "Sophie", "25/09/1998", "Bertoua", "Réseaux et Télécommunications", "École Polytechnique", "2023-2024", "Bien", "15/07/2024", "BAC+3"],
+    ["ET2024007", "MVONDO", "Eric", "07/07/1997", "Sangmélima", "Génie Logiciel", "Faculté des Sciences", "2023-2024", "Passable", "15/07/2024", "BAC+3"],
+    ["ET2024008", "ONANA", "Christelle", "14/02/1999", "Kribi", "Cybersécurité", "École Polytechnique", "2023-2024", "Très Bien", "15/07/2024", "BAC+3"]
+  ];
+
+  // Instructions
+  const instructions = [
+    ["FICHIER DE TEST - DIPLOMASECURE PRO"],
+    [""],
+    ["Ce fichier contient 10 étudiants de test pour l'application DiplomaSecure."],
+    [""],
+    ["COLONNES INCLUSES:"],
+    ["• Matricule étudiant (format: ET/MA + année + numéro)"],
+    ["• Nom de famille"],
+    ["• Prénom"],
+    ["• Date de naissance (format: JJ/MM/AAAA)"],
+    ["• Lieu de naissance"],
+    ["• Programme / Filière"],
+    ["• Faculté / Département"],
+    ["• Session académique (2023-2024)"],
+    ["• Mention (Très Bien, Bien, Assez Bien, Passable)"],
+    ["• Date de délivrance"],
+    ["• Niveau d'étude (BAC+3, BAC+5)"],
+    [""],
+    ["UTILISATION:"],
+    ["1. Importer ce fichier dans DiplomaSecure"],
+    ["2. Vérifier la validation automatique"],
+    ["3. Ajouter les informations complémentaires"],
+    ["4. Générer les diplômes"],
+    [""],
+    ["DONNÉES DE TEST:"],
+    ["• 8 étudiants en Licence (BAC+3)"],
+    ["• 2 étudiants en Master (BAC+5)"],
+    ["• 4 filières différentes"],
+    ["• 2 facultés différentes"],
+    ["• Toutes les mentions représentées"]
+  ];
+
+  console.log("Données de test générées:");
+  console.log("CSV Data:", testData.map(row => row.join(",")).join("\n"));
+  console.log("\nInstructions:", instructions.map(row => row.join("")).join("\n"));
+  
+  return { testData, instructions };
+};
+
+// Exporter les données
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = { generateTestExcel };
+} else if (typeof window !== 'undefined') {
+  window.generateTestExcel = generateTestExcel;
+}
+
+// Auto-exécution si dans le navigateur
+if (typeof window !== 'undefined') {
+  console.log("Script de test DiplomaSecure chargé. Utilisez generateTestExcel() pour générer les données.");
+}
