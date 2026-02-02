@@ -1,10 +1,3 @@
-"""
-DiplomaSecure Backend - Production Ready
-Version: 2.0.0
-Auteur: Senior Full-Stack Developer
-Statut: Production Ready
-"""
-
 import os
 import time
 import json
@@ -1177,7 +1170,7 @@ async def create_user(
             id=str(uuid.uuid4()),
             email=data.email,
             full_name=data.full_name,
-            password_hash=hash_password(data.password),
+            password_hash=SecurityUtils.get_password_hash(data.password),
             role=data.role,
             tenant_id=data.tenant_id,
             status="ACTIVE",
